@@ -1,0 +1,152 @@
+/* color fondo veige #C3E2CA
+    color fondo azul marino #7A92A6
+     */
+     * {
+    box-sizing: border-box;
+}
+body {
+     background-color: #EAF1FB;
+     margin: 0px; 
+}
+header {
+    background-color: #C2E7FF;
+    margin: 0px;
+    padding: 1px;
+    border: 0px;
+    border-bottom: 2px ridge #7A92A6;
+    text-align: start
+}
+/* CURRICULUM (GRID) */
+.grid-container {
+    background-color: #EAF1FB;
+    width: 60%;
+    margin: 50px auto;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    row-gap: 7px;
+    column-gap: 7px;
+    border: 3px ridge #7A92A6;
+}
+.grid-item1 {
+    padding: auto;
+    margin: auto;
+}
+.hombre {
+    padding: 20px;
+}   
+.name {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.grid-encabezados {
+    height: 40px;
+    display: grid;
+    grid-template-columns: 40px auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #C3E2CA;
+}
+.grid-item3 {
+    background-color: #C3E2CA;
+    padding: 10px;
+    margin: 10px;
+    grid-row: span 2;
+}
+
+.foto {
+    width: 125px;
+    height: 125px;
+    border-radius: 62.5px; 
+    margin-bottom: 10px;
+}
+.nombre {
+    font-family: 'Quicksand', sans-serif;
+
+}
+.profesion { 
+    font-family: 'Shantell Sans', bold;
+}
+.presentacion {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 50px 50px;
+    margin: 1px;
+    padding: 1px;
+    border: 1px;
+}
+.texpresentacion {
+    margin: 1px;
+    padding: 1px;
+    border: 1px;
+
+}
+.iconos {
+    height: 40px;
+    width: 40px; 
+    background-color: #5B7F9F;
+}
+.textoencabezado {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* MODO OSCURO */
+.modos {
+    height: 40px;
+    width: 40px;   
+}
+button {
+    appearance: none;
+    background-color: #C2E7FF;
+    border: 0px;
+    cursor:pointer; cursor: hand
+}
+.dark-mode {
+    background-color: #252525;
+    color: #A8A59A; 
+}
+.dark-mode header {
+    background-color: black;
+    border-bottom: 2px ridge #5C483A;
+}
+.dark-mode button {
+    background-color: black;
+}
+.dark-mode .grid-container {
+    background-color: black;
+    border: 2px ridge #5C483A;
+}
+.dark-mode .grid-item3 {
+    background-color: #3A1E35;
+}
+.dark-mode .grid-encabezados {
+    background-color: #3A1E35;
+}
+.dark-mode .iconos {
+    background-color: #5C483A;
+}
+.disableDarkMode {
+    background-color: #EAF1FB;
+    color: black;
+}
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 50% 50%;
+        column-gap: 0px;
+        width: 99%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
